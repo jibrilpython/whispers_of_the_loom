@@ -1,0 +1,42 @@
+1. DESIGN PHILOSOPHY
+Visual: "Cottage Industry Archive" — the UI draws from the visual language of folk art documentation and ethnographic museum curation: the measured simplicity of a Shaker furniture catalog, the warm precision of a botanical illustration archive, the quiet authority of a heritage society's collection database. These tools were made by hand, used by hand, and passed down through families — the app should feel like the first serious digital home they have ever had. Think a contemporary craft museum's collection interface, built with the care and restraint of the objects themselves.
+Mood: hearth-warm, folk-serious, handcraft-precise, domestic-heritage, quietly generational.
+Important: No rustic wood-grain textures, no candlelight glow effects, no spinning wheel silhouettes used as decorative motifs. The drop spindle and the carding comb were the industrial technology of their era — precise, optimized, and regionally varied in ways that matter deeply to historians. The app treats them with the same analytical seriousness as every other instrument in the series.
+
+2. COLORS
+#F8F5F0 — Main background (undyed fleece white — the warmest, most organic background in the series, like raw wool held to a north-facing window)
+#1A1510 — Primary text & high-contrast elements (hearth black — the warmest near-black, brown-tinged like soot on a spinning room beam)
+#FFFFFF — Secondary panels / card surfaces
+#7D7468 — Secondary text / muted labels (fleece grey — warm, soft, like the shadow side of a carded batt)
+#7A4F2E — Primary accent (distaff brown — the specific reddish-brown of a turned hardwood distaff, the color of walnut or cherry wood worn smooth by generations of hands. Warm, organic, deeply material)
+#EAE5DC — Outline / stroke / dividers (linen rule lines, warm and soft)
+#4A7358 — Secondary accent (herb garden green — the muted green of plant-dyed wool, madder's complement, the color of a folk herbarium's binding or a village weaver's painted cabinet. For condition badges, regional provenance, and mint-state indicators)
+#C0392B — Critical errors only
+Important: Distaff brown is the most organically material accent in the series — it is the color of the wood the tools were made from, worn to a specific warmth by use and time. It should feel like something handled rather than designed. Herb garden green is its quiet counterbalance — the green of plant dyes and rural craft traditions. The background is the most organic white in the series: not paper, not limestone, not parchment — raw fleece, which is slightly warmer and softer than all of them.
+
+3. TYPOGRAPHY
+Display / Headings: Lora (weight 600–700) — a literary serif designed for screen reading with the warmth of a hand-set book page. At large sizes it has the quality of a folk arts society publication or a museum acquisition record — authoritative without being cold, learned without being academic. Used for tool names on detail views and the app title. Its slightly calligraphic quality references the handwritten tradition of the craft records these tools appear in.
+Body / Descriptions: Inter (weight 300–400) — neutral and invisible. For condition notes, regional history, fiber specifications, and all prose fields.
+Monospace / Identifiers: IBM Plex Mono — for archive codes like WTL-ASHWOOD-DISTAFF-1780-GBR-YORKSHIRE-DALES-003, whorl diameter specs (42 mm), drive ratio values (1:14 wheel ratio), and all structured technical fields.
+Important: Lora at 24px and above only — its warmth becomes clutter at small sizes. Inter handles all reading-size text. IBM Plex Mono for every measurement and archive code — even a hand-carved spindle has a whorl diameter and a shaft length that can be recorded to the millimeter. The precision of the mono type contrasts with the warmth of the Lora headings in a way that honors both the craft and the scholarship.
+
+4. SURFACE & TEXTURE LANGUAGE
+
+Backgrounds: flat undyed fleece white — no grain, no texture, no noise, despite every temptation this app presents
+Cards: pure white with a 1px border at #EAE5DC and 10px corner radius — folk archive record cards, warm and unhurried
+Spindle whorl motif: each list card features a small SVG — a minimal top-down view of a spindle whorl: a circle with a small center hole, representing the weighted disc that gave every spindle its momentum. The outer ring thickness reflects the whorl's weight class (thin ring for light silk spindles, thick ring for heavy wool drop spindles). Rendered in distaff brown for complete and operational tools, herb garden green for display condition or museum-only pieces. The whorl is the most universal element across all spinning tools in the collection — every spindle, wheel, and bobbin winder has one.
+Fiber type badge: each card shows the fiber specification in IBM Plex Mono — Wool / worsted, Flax / linen, Silk, Cotton — in a small warm-bordered pill. The defining operational specification — a silk spindle and a wool spindle require fundamentally different geometries.
+Photography: tool photography on warm white — the whorl face, carding teeth, or wheel drive band forward. For drop spindles, show the full shaft length with the whorl in position. For spinning wheels, show the drive wheel and flyer assembly together. No props, no fiber in frame.
+Regional craft tradition tag: small pill showing the folk tradition or region — Yorkshire Dales, Scandinavian, Appalachian, Breton, Himalayan — in distaff brown at 12% opacity fill with full brown text
+
+
+5. INTERACTION PRINCIPLES
+
+Transitions: 230–270ms ease-in-out — the softest, most unhurried transitions in the light-background group. A spindle builds momentum slowly and releases it the same way.
+Selected state: distaff brown left-border (3px) + faint #F7F0E8 background tint on active cards
+Empty states: NO TOOLS IN THIS COLLECTION YET. in IBM Plex Mono, centered, fleece grey — one line
+Loading: a thin distaff brown progress bar at screen top — slow and warm, like thread drawing out from a roving
+Navigation: bottom tab bar — four tabs: Collection, Region Map, Logbook, Settings. Active tab in distaff brown.
+Fiber tradition filter: a first-class filter chip row — Wool, Flax, Silk, Cotton, Bast fiber, Blended — because the fiber a tool was designed to process determines every aspect of its geometry — whorl weight, tooth spacing, shaft length — and is the primary axis by which folk textile historians classify and compare specimens
+
+Important: The spindle whorl SVG on each card is the most intimate motif in the series — a simple circle with a hole, repeated across every spinning culture on earth for ten thousand years. Its universality is its power. Ring weight encodes fiber class. Brown means the tool is complete and usable. Green means it lives behind glass. A collector should feel the difference between those two states before they read a word — the whorl should communicate it.
